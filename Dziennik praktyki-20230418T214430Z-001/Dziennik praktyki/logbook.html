@@ -6,55 +6,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logbook</title>
+    <link rel="stylesheet" href="styles.css"></link>
 </head>
 
 <body>
-    <h1>Dziennik praktyki zawodowej</h1>
-    <mainbtns>
-        <home href="hom.html">Home</home>
-        <logbook href="logbook.html">Dziennik zajęć</logbook>
-        <summary href="summary.html">Podsumowanie</summary>
-    </mainbtns>
-    <h2>Realizacja materiału</h2>
     <fieldset>
-        <fieldset>
-            <legend>Informacja o zajęciach</legend>
-            <form>
-                <label for="date">Wybierz date zajęć:</label>
-                <input type="date" id="date">
-                <label for="section-select">Wybierz dział:</label>
-                <select name="section-select" id="section-select">
-                    <option value="1">Dział1</option>
-                    <option value="2">Dział2</option>
-                    <option value="3">Dział3</option>
-                </select>
-                <label for="topic-select">Wybierz temat:</label>
-                <select name="topic-select" id="topic-select">
-                    <option value="1">Temat1</option>
-                    <option value="2">Temat2</option>
-                    <option value="3">Temat3</option>
-                </select>
+        <h1>Dziennik praktyki zawodowej</h1>
+        <mainbtns>
+            <form action="home.html">
+                <input type="submit" value="Home" />
             </form>
-        </fieldset>
+            <form action="logbook.html">
+                <input type="submit" value="Dziennik zajęć" />
+            </form>
+            <form action="summary.html">
+                <input type="submit" value="Podsumowanie" />
+            </form>
+        </mainbtns>
+        <h2>Realizacja materiału</h2>
         <fieldset>
-            <legend>Opiekun</legend>
+            <fieldset>
+                <legend>Informacja o zajęciach</legend>
                 <form>
-                    <label for="Jerzy Kot">Jerzy Kot<input type="radio" id="opiekun"/>
-                    <label for="Jan Kowalski Kot">Jan Kowalski
-                    <input type="radio" id="opiekun"/>
-                    <label for="Maria Nowak">Maria Nowak
-                    <input type="radio" id="opiekun"/>
+                    <label for="date">Wybierz date zajęć:</label>
+                    <input type="date" id="date">
+                    <label for="section-select">Wybierz dział:</label>
+                    <select name="section-select" id="section-select">
+                        <option value="1">Systemy operacyjne</option>
+                        <option value="2">Naprawa sprzętu komputerowego</option>
+                        <option value="3">Sieci komputerowe</option>
+                        <option value="4">Projektowanie stron internetowych</option>
+                        <option value="5">Programowanie aplikacji internetowych</option>
+                    </select>
+                    <label for="topic-select">Wybierz temat:</label>
+                    <select name="topic-select" id="topic-select">
+                        <option value="1">Temat1</option>
+                        <option value="2">Temat2</option>
+                        <option value="3">Temat3</option>
+                    </select>
                 </form>
-        </fieldset>
-        <fieldset>
-            <legend>Realizacja materiału</legend>
-            <form>
-                <label for="name">Name (4 to 8 characters):</label>
+            </fieldset>
+            <fieldset>
+                <legend>Opiekun</legend>
+                    <form>
+                        <label for="Jerzy Kot">Jerzy Kot<input type="radio" id="opiekun"/>
+                        <label for="Jan Kowalski Kot">Jan Kowalski
+                        <input type="radio" id="opiekun"/>
+                        <label for="Maria Nowak">Maria Nowak
+                        <input type="radio" id="opiekun"/>
+                    </form>
+            </fieldset>
+            <fieldset>
+                <legend>Realizacja materiału</legend>
+                <form>
+                    <label for="report">Sprawozdanie:</label>
+                    <input type="textarea" id="report" name="report"/>
 
-    <input type="textarea" id="name" name="name" required
-       minlength="4" maxlength="8" size="30" height="">
-            </form>
+                    <label for="check">Zrealizowano:</label>
+                    <input type="checkbox" id="check" name="check"/>
+
+                    <label for="hrs">Ile godzin:</label><input type="text" id="hrs" name="hrs"/>
+
+                    <label for="grade">Stopień opanowania materiału: 1</label>
+                    <input type="range" min="1" max="6" id="grade" name="grade"/><label>6</label>
+
+                </form>
+            </fieldset>
+            <btn>
+                <input type="button" value="wyczyść" /> 
+                <input type="submit" value="dodaj"/>
+            </btn>
+
         </fieldset>
+        <h3>Zrealizowane tematy</h3>
+
+
+
+        <hr>
+    <copyright>©Wchodzipiesdobaru</copyright>
     </fieldset>
 </body>
 

@@ -1,0 +1,43 @@
+input[type="textarea"] {
+    padding: 10px;
+    max-width: 100%;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px #999;
+}
+
+body{
+    background-color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    
+}
+
+fieldset{
+    background-color: blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+mainbtns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+formhom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px 10px;
+}
+
+.btn {
+
+    justify-content: space-evenly;
+    background-color: #0ecac1;
+    color: #FFFFFF;
+    padding: 15px 20px;
+
+  }
